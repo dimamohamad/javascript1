@@ -81,5 +81,7 @@ Sample array : var arr1 = [ -3, 8, 7, 6, 5, -4, 3, 2, 1 ];
 Sample Output : -4,-3,1,2,3,5,6,7,8
 */
 var arr7 = [ -3, 8, 7, 6, 5, -4, 3, 2, 1 ];
-const sorted = arr7.sort();
-console.log(sorted);
+arr7 = arr7.map(value => value + 4);
+arr7.sort()
+arr7 = arr7.map(value => value - 4);
+console.log(arr7);
