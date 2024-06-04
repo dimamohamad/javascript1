@@ -1,10 +1,12 @@
-console .log ("hello world")
+console .log ("hello world");
 var x=250;
+console.log(typeof x)
 x=250*0.025;
 console.log(x);
 /*[1,7 9 45 ,] */ /*put comma between item and remove comma from the end of array  */
 const arr1=[1,7,9,45];
 console.log(arr1);
+console.log (typeof(arr1));
 /*["Str" "alex","moh" */ /*put comma between item and put closing braket braces */
 const  arr2=["Str","alex","moh"];
 console.log(arr2);
@@ -14,7 +16,6 @@ console.log(arr3);
 var fruits=["Tomato","Banana","Watermelon"]
 console.log(fruits.indexOf("Tomato"));
 console.log(fruits.indexOf("Banana"));
-
 /*
 3
 Create an array represents your:
