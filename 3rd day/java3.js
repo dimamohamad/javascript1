@@ -30,7 +30,7 @@ const image = document.querySelector(".img1")
       
     }
     else{
-      fontstyle.fontStyle="";
+      fontstyle.style.fontStyle="";
     }
   }
   const fontweight= document.querySelector(".box2")
@@ -41,7 +41,7 @@ const image = document.querySelector(".img1")
       
     }
     else{
-      fontstyle.fontStyle="";
+      fontweight.style.fontWeight="";
     }
   }
   const textdecoration= document.querySelector(".box2")
@@ -52,7 +52,7 @@ const image = document.querySelector(".img1")
       
     }
     else{
-      fontstyle.fontStyle="";
+      textdecoration.style.textDecoration="";
     }
   }
   
