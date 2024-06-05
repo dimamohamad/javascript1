@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="box-1" class="box">
+        Can I help you?
+    </div>
+    <select onclick="changeimage(this.value)" id="ty" name="country">
+        <option value="Flag_of_Jordan.svg">Jordan</option>
+        <option value="download.png">Palastine</option>
+        <option value="flag-Iraq-2008.webp">Iraq</option>
+        <option value="Flag_of_Sudan.svg">Sudan</option>
+    </select>
+    <img class="img1" src="Flag_of_Jordan.svg" alt="jordan flag">
+    
+    
+    <select onclick="changefontfam(this.value)" name="fontfamily" id="fontfamily">
+        <option value="Times New Roman">Times New Roman</option>
+        <option value="Arial">Arial</option>
+        <option value="Georgia">Georgia</option>
+        <option value="Courier New">Courier New</option>
+    </select>
+
+    <select id="fontsize" onclick="changefontsize(this.value)" name="fontsize">
+        <option value=10px>10px</option>
+        <option value=15px>15px</option>
+        <option value=20px>20px</option>
+        <option value=40px>40px</option>
+    </select>
+    <input type="checkbox" id="fontstyle" onclick="changefontstyle(this.checked)" name="fontstyle">
+    <label value="italic">Italic</label>
+
+
+
+
+
+    
+    <input type="checkbox" id="fontweight" onclick="changefontweight(this.checked)" name="fontweight">
+   <label value=""Bold>Bold</label>
+   <input type="checkbox" id="textdecoration" onclick="changetext(this.checked)" name="textdecoration">
+   <label value="Underline">Underline</label>
+   <div class="box2">
+    the quick brown fox over the dog
+   </div>
+
+
+    <script src="java3.js"></script>
+</body>
+
+</html>

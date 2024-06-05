@@ -1,0 +1,35 @@
+
+.box{ 
+    text-align: center;
+    align-content:center;
+    height: 50px;
+    width: 500px;
+    margin: 7px;
+    color:black;
+    background-color: yellow;
+    border: solid 3px black;}
+
+    img{
+        width:500px;
+        height:250px;
+        margin:7px;
+        display:block;
+    }
+select{
+        display:block;
+        margin:7px;
+    }
+   #fontfamily{
+    display: inline;
+   }
+ #fontsize{
+    display: inline;
+ }  
+.box2{
+    margin: 7px;
+   padding: 7px;
+    height: 150px;
+    width: 500px;
+    border: solid 3px black;
+}
+
