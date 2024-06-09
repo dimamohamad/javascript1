@@ -1,0 +1,49 @@
+h1{
+    text-align: center;
+    background-color: yellow;
+    border: 1px solid black;
+    width:400px
+}
+#changecolor{
+    background-color: blue;
+    width: 200px;
+    height:200px;
+    margin:7px;
+}
+
+img{
+    width:200px;
+    height:200px;
+    margin:7px;
+    display:block;
+    
+}
+
+select{
+    display:block;
+    margin:7px;
+}
+#fontfamily{
+display: inline;
+}
+#fontsize{
+display: inline;
+}  
+.box2{
+margin: 7px;
+padding: 7px;
+height: 150px;
+width: 700px;
+border: solid 3px black;
+}
+#password{
+    margin: 7px;
+    
+}
+#confirmPassword{
+    margin: 7px;
+    margin-left: 80px;
+}
+
+
+#submitButton{display: block;}

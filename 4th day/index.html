@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom task2</title>
+    <link  rel="stylesheet"   href="test.css">
+</head>
+<body>
+  <h1>Hello World!</h1>
+  <div id="changecolor"></div>
+
+  <select onclick="changeimage(this.value)" id="ty" name="country">
+    <option value="download (4).jpg" selected>no image</option>
+    <option value="download (1).jpg">cat1</option>
+    <option value="download (2).jpg">cat2</option>
+    <option value="download (3).jpg">cat3</option>
+    <option value="download.jpg">cat4</option>
+</select>
+<img class="img1" src="download (4).jpg">
+
+
+
+
+<select onclick="changefontfam(this.value)" name="fontfamily" id="fontfamily">
+    <option value="Times New Roman">Times New Roman</option>
+    <option value="Arial" selected>Arial</option>
+    <option value="Georgia">Georgia</option>
+    <option value="Courier New">Courier New</option>
+</select>
+
+<select id="fontsize" onclick="changefontsize(this.value)" name="fontsize">
+    <option value=12pt selected>12pt</option>
+    <option value=15pt>15pt</option>
+    <option value=20pt>20pt</option>
+    <option value=40pt>40pt</option>
+</select>
+<input type="checkbox" id="fontstyle" onclick="changefontstyle(this.checked)" name="fontstyle">
+<label value="italic">Italic</label>
+
+
+
+
+
+
+<input type="checkbox" id="fontweight" onclick="changefontweight(this.checked)" name="fontweight">
+<label value=""Bold>Bold</label>
+<input type="checkbox" id="textdecoration" onclick="changetext(this.checked)" name="textdecoration">
+<label value="Underline">Underline</label>
+<div class="box2">
+the quick brown fox over the dog
+</div>
+
+<!--      
+<form id="password form">  
+   <label for="pass" style="font-weight: bold;"> Password (min 6 charecters):</label>
+   <input type="password" name="Password" value="pass1" id="pass"> <br> 
+   <label for="pass1" > Repeat password:</label>
+    <input type="password" name="Repeat Password" value="pass2" id="pass1">  
+
+    
+      
+    <input type="button" onclick="submitform()" value="Submit" id="btn">  
+</form>    -->
+<form id="registrationForm">
+    <div>
+        <label for="password"> Password (min 6 charecters):</label>
+        <input type="password" id="password" name="password">
+        <span id="passwordError" class="error"></span>
+    </div>
+    <div>
+        <label for="confirmPassword">Repeat password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword">
+        <span id="confirmPasswordError" class="error"></span>
+    </div>
+    <button type="submit" id="submitButton" style="display:none;">Submit</button>
+</form>
+    <script src="test.js"></script>
+</body>
+</html>
