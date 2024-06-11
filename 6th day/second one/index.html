@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <form>
+ <div>      
+<label>Name:</label>
+<input type="text"  id="name">
+</div> <br>
+<label>Age:</label>
+<input type="number"  id="age">
+<div><br>
+<div>
+ <label>Gender:</label>
+<input type="text"  id="gender">
+</div><br>
+<div>
+<label>Birth Date:</label>
+<input type="date"  id="birthdate">
+</div><br>
+<div>
+<label>Your image:</label>
+<input type="text"  id="image"> 
+</div><br>
+<hr>
+<div>
+<label>Description:</label>
+<input type="text"  id="description">
+</div><br>
+<div>
+<label>major & university:</label>
+<input type="text"  id="major">
+</div><br>
+<div>
+<label>Programming Language :</label>
+<input type="checkbox"  id="html">
+<label>HTML</label>
+<input type="checkbox"  id="css">
+<label>CSS</label>
+<input type="checkbox"  id="js">
+<label>JS</label>
+</div><br>
+<div>
+<hr>
+<div>
+    <label>siblings number:</label>
+    <input type="number"  id="siblings">  
+</div><br>
+
+<div>
+    <label>description of siblings :</label>
+    <input type="text"  id="desofs">  
+</div><br>
+<button >Submit</button>
+    </form>
+    
+    <script>
+     document.getElementsByTagName ("form")[0].addEventListener("submit",event=>{
+        event.preventDefault()
+            let obj={
+                name:document.getElementById("name").value,
+                age:document.getElementById("age").value,
+               Gender: document.getElementById("gender").value,
+               BirthDate :document.getElementById("birthdate").value,
+               YourImage:document.getElementById("image").value,
+               Description:document.getElementById("description").value,
+               major:document.getElementById("major").value,
+               programmingLanguages:[],
+               
+               siblingnumber:document.getElementById("siblings").value,
+               descriptionOfSiblings:document.getElementById("desofs").value,
+
+
+
+               
+            }
+          
+            if(document.getElementById("html").checked ) 
+            {obj.programmingLanguages.push("HTML")}  
+            if(document.getElementById("css").checked ) 
+            {obj.programmingLanguages.push("CSS")}  
+            if(document.getElementById("JS").checked ) 
+            {obj.programmingLanguages.push("js")}  
+            
+            
+
+        localStorage.setItem("my data",JSON.stringify(obj))
+    
+    })
+    
+    </script>
+</body>
+</html>

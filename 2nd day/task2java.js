@@ -17,15 +17,15 @@
 
 
 /*this is 2nd task  */
-// function larger ( a ,b ){
-//     if(a>b){
-//         return a ;
-//     }else {
-//         return b
-//     }
-// }
-// let q1 = larger(3,5);
-// console.log(q1);
+function larger ( a ,b ){
+    if(a>b){
+        return a ;
+    }else {
+        return b
+    }
+}
+let q1 = larger(3,5);
+console.log(q1);
 
 
 
@@ -37,38 +37,38 @@ Output : 4, 0, -1 */
 
 /******* Start Your Code *********/
   
-// function sorting (a , b , c ){
-//     let sorted = [] ; 
-//     if (a > b && a > c ){
-//        if (b>c){
-//            sorted = [a , b ,c];
-//            alert(sorted);
-//        }else{
-//            sorted = [a , c , b];
-//            alert(sorted);
-//        }
-//     }else if (b > a && b > c  ){
-//        if (a>c){
-//            sorted = [b , a , c];
-//            alert(sorted);
-//        }else{
-//            sorted = [b , c , a];
-//            alert(sorted);
-//        }
+function sorting (a , b , c ){
+    let sorted = [] ; 
+    if (a > b && a > c ){
+       if (b>c){
+           sorted = [a , b ,c];
+           alert(sorted);
+       }else{
+           sorted = [a , c , b];
+           alert(sorted);
+       }
+    }else if (b > a && b > c  ){
+       if (a>c){
+           sorted = [b , a , c];
+           alert(sorted);
+       }else{
+           sorted = [b , c , a];
+           alert(sorted);
+       }
 
-//     }else if(c > b && c > a ) {
-//        if (a>b){
-//            sorted = [c , a , b];
-//            alert(sorted);
-//        }else{
-//            sorted = [c , b , a];
-//            alert(sorted);
-//        }
-//     }  
-// }
+    }else if(c > b && c > a ) {
+       if (a>b){
+           sorted = [c , a , b];
+           alert(sorted);
+       }else{
+           sorted = [c , b , a];
+           alert(sorted);
+       }
+    }  
+}
 
 
-// let q3 = sorting(0, -1, 4);
+let q3 = sorting(0, -1, 4);
 
 
 
