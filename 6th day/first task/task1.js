@@ -17,10 +17,13 @@ async function changeimage(){
         option.value=data1[i].image;
         console.log(option)
         select.appendChild(option);
-
+      
     }
+    
     let image=document.getElementById("img1");
-    image.src=data1[0].image;
+    image.src=data1[1].image;
+    select.value = image.src=data1[1].image;
+    
     select.addEventListener("change",()=>{image.src=select.value})
     }
 
